@@ -1,0 +1,23 @@
+{
+  "name": "plot-component",
+  "description": "I want to plot.",
+  "version": "0.0.1",
+  "keywords": [
+    "graph",
+    "plot",
+    "debug"
+  ],
+  "dependencies": {
+    "remap": "git+https://github.com/mnmly/remap.git"
+  },
+  "license": "MIT",
+  "component": {
+    "scripts": {
+      "plot/index.js": "index.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mnmly/plot.git"
+  }
+}

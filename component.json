@@ -1,0 +1,12 @@
+{
+  "name": "plot",
+  "description": "I want to plot.",
+  "version": "0.0.1",
+  "dependencies": {
+    "mnmly/remap": "*"
+  },
+  "scripts": [
+    "index.js"
+  ]
+}
+
