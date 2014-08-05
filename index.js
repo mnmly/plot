@@ -61,17 +61,17 @@ Plot.prototype.draw = function() {
   var ctx = this.context;
   
   ctx.clearRect(0, 0, this._width, this._height);
-	ctx.beginPath();
-	ctx.lineWidth = 2.0;
-	ctx.strokeStyle = this.color;
+  ctx.beginPath();
+  ctx.lineWidth = 2.0;
+  ctx.strokeStyle = this.color;
   this.pool.forEach(function(v, i) {
-		var x = map(i, 0, len, xMin, xMax);
-		var y = map(v, self.min, self.max, yMin, yMax);
-		if(!i) {
-			ctx.moveTo(x, y);
-		} else {
-			ctx.lineTo(x, y);
-		}
+    var x = map(i, 0, len, xMin, xMax);
+    var y = map(v, self.min, self.max, yMin, yMax);
+    if(!i) {
+      ctx.moveTo(x, y);
+    } else {
+      ctx.lineTo(x, y);
+    }
     if(i === len - 1) {
       ctx.stroke();
       ctx.beginPath();
